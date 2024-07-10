@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DlqCheck", "DlqCheck.csproj", "{B4B0BE91-C325-4538-BB5F-3B227B270B97}"
+EndProject
+Global
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAF8CA36-5B0C-45BC-85E4-E6C11FB7DB8C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4B0BE91-C325-4538-BB5F-3B227B270B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B0BE91-C325-4538-BB5F-3B227B270B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B0BE91-C325-4538-BB5F-3B227B270B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B0BE91-C325-4538-BB5F-3B227B270B97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
