@@ -21,7 +21,18 @@ internal record DlqArgs
         "delete",
         Required = false,
         Default = false,
-        HelpText = "Delete the messages in the DLQ."
+        HelpText = "Delete the messages in the DLQ.",
+        SetName = "Delete"
     )]
     public bool Delete { get; set; } = false;
+
+    [Option(
+        'r',
+        "redrive",
+        Required = false,
+        Default = false,
+        HelpText = "Redrive the messages in the DLQ.",
+        SetName = "Redrive"
+    )]
+    public bool Redrive { get; set; } = false;
 }
