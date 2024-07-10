@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+
+    <PackageVersion Include="CommandLineParser" Version="2.9.1" />
+
+    <!-- AWS  -->
+    <PackageVersion Include="AWSSDK.SSO" Version="3.7.300.116" />
+    <PackageVersion Include="AWSSDK.SSOOIDC" Version="3.7.302.27" />
+    <PackageVersion Include="AWSSDK.SQS" Version="3.7.301.30" />
+
+    <!--  Unit tests  -->
+    <PackageVersion Include="xunit" Version="2.8.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.0" />
+
+    <!--  CI/CD  -->
+    <PackageVersion Include="CSharpier.MsBuild" Version="0.28.2" />
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
+    <PackageVersion Include="Nerdbank.GitVersioning" Version="3.6.133" />
+  </ItemGroup>
+</Project>
