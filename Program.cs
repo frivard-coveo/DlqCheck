@@ -20,8 +20,8 @@ internal class Program
                 {
                     QueueUrl = parsed.Value.Queue,
                     MaxNumberOfMessages = parsed.Value.Count,
-                    WaitTimeSeconds = 5,
-                    VisibilityTimeout = 1
+                    WaitTimeSeconds = parsed.Value.WaitTimeSeconds,
+                    VisibilityTimeout = parsed.Value.VisibilityTimeout
                 }
             );
             if (!messages.HttpStatusCode.IsSuccess())
@@ -35,6 +35,7 @@ internal class Program
             Console.WriteLine("-----------------");
             foreach (var message in messages.Messages)
             {
+                Console.WriteLine(message.MessageId);
                 Console.WriteLine(message.Body);
                 Console.WriteLine("-----------------");
             }

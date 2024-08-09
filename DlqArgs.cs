@@ -35,4 +35,20 @@ internal record DlqArgs
         SetName = "Redrive"
     )]
     public bool Redrive { get; set; } = false;
+
+    [Option(
+        "waittime",
+        Required = false,
+        Default = 5,
+        HelpText = "Wait time in seconds for the GetMessage call."
+    )]
+    public int WaitTimeSeconds { get; set; } = 5;
+
+    [Option(
+        "visibilitytimeout",
+        Required = false,
+        Default = 2,
+        HelpText = "Visibility timeout in seconds for the GetMessage call."
+    )]
+    public int VisibilityTimeout { get; set; } = 2;
 }
